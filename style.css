@@ -1,0 +1,309 @@
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Golos Text", serif;
+}
+
+@font-face {
+    font-family: 'Soledago';
+    src: url('fonts/Soledago.eot');
+    src: url('fonts/Soledago.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Soledago.woff2') format('woff2'),
+         url('fonts/Soledago.woff') format('woff'),
+         url('fonts/Soledago.ttf') format('truetype'),
+         url('fonts/Soledago.svg#Soledago') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Шапка */
+.header {
+    background-color: #75181A;
+    text-align: center;
+}
+
+.biglogo {
+    padding-top: 57px;
+}
+
+.minilogo {
+    font-family: 'Soledago';
+    color: aliceblue;
+    font-size: 40px;
+    padding-bottom: 52px;
+}
+
+/* Навигация */
+.navigation {
+    background-color: #FBCD67;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 10px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Меню */
+.menu {
+    background-image: url("images/fon.svg");
+    background-size: cover;
+    margin-bottom: -127px;
+}
+
+.content {
+    max-width: 900px;
+    margin: 127px auto;
+    padding: 100px;
+}
+
+.heading {
+    font-family: 'Soledago';
+    color: aliceblue;
+    font-size: 200px;
+    text-align: center;
+    padding: 185px 0 376px;
+}
+
+.menu-title, .menu-description, .drink, .price {
+    color: aliceblue;
+    text-align:justify;
+    font-size: 25px;
+    font-family: 'Golos Text';
+}
+
+/* Описание */
+.description {
+    position: relative;
+    background-image: url("images/description.svg");
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cover-description {
+    position: relative;
+    z-index: 2;
+}
+
+.title-descriprion {
+    font-family: 'Soledago';
+    font-size: 110px;
+    color: rgba(251, 205, 103, 1);
+}
+
+.text-descriprion {
+    font-family: 'Golos Text';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: rgba(255, 255, 255, 1);
+    padding-right: 250px;
+    margin-top: -150px;
+    margin-bottom: 180px;
+}
+
+.description img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+/* Регистрация */
+.registration {
+    position: relative;
+    background-image: url("images/registration.svg");
+    background-size: cover;
+    min-height: 800px;
+    padding-bottom: 100px;
+}
+
+.menu-title {
+    font-family: 'Soledago';
+    font-size: 50px;
+}
+
+.menu-description {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.menu-item {
+    width: 70%;
+    margin-bottom: 59px;
+}
+
+.menu-img1, .menu-img2, .menu-img3 {
+    position: absolute;
+}
+
+.menu-img1 {
+    width: 132.16px;
+    height: 234px;
+    right: 263px;
+    top: 1650px;
+}
+
+.menu-img2 {
+    width: 153.38px;
+    height: 235px;
+    left: 1034px;
+    top: 2300px;
+}
+
+.menu-img3 {
+    width: 115px;
+    height: 361px;
+    left: 1052px;
+    top: 2700px;
+}
+
+.title-descriprion {
+    font-family: 'Soledago';
+    font-size: 110px;
+    color: #FBCD67;
+    padding-top: 68px;
+    text-align: center;
+}
+
+.text-descriprion {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    text-align: center;
+    padding-top: 200px;
+    padding-left: 270px;
+}
+
+.registration-name input, .registration-phone input {
+    width: 825px;
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333;
+    font-family: 'Golos Text';
+    margin-top: 305px;
+    margin-left: 310px;
+    padding-top: 30px;
+}
+
+.registration-name input::placeholder, .registration-phone input::placeholder {
+    font-family: 'Golos Text';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #75181A;
+    text-decoration:dotted;
+}
+
+.registration-phone input {
+    width: 825px;
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333;
+    font-family: 'Golos Text';
+    margin-top: 40px;
+    margin-left: 310px;
+    padding-top: 30px;
+}
+
+.submit-button {
+    position: absolute;
+    width: 550px;
+    height: 95px;
+    margin-left: 450px;
+    margin-top: 50px;
+    background-color:#FBCD67;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* Акция */
+.promotion {
+    position: relative;
+    background-image: url("images/promotion.svg");
+    background-size: cover;
+    min-height: 1179px;
+    min-width: 1440px;
+    padding-bottom: 100px;
+}
+
+.text-promotion {
+    font-family: 'Golos Text';
+    font-size: 40px;
+    font-weight: 500;
+    color: #75181A;
+    width: 954px;
+    margin-left: 248px;
+    padding-top: 250px;
+}
+
+/* Контакты */
+.contact {
+    position: relative;
+    background-image: url("images/contacts.svg");
+    background-size: cover;
+    min-height: 771px;
+    min-width: 1440px;
+}
+
+.contact-phone, .contact-street, .contact-city {
+    font-family: 'Golos Text';
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+}
+
+.contact-phone {
+    padding-top: 233px;
+    padding-left: 500px;
+}
+
+.contact-street {
+    margin-top: 30px;
+    padding-left: 424px;
+}
+
+.contact-city {
+    margin-top: 30px;
+    padding-left: 490px;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+}
